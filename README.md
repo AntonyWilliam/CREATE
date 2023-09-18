@@ -13,7 +13,8 @@ This project showcases how to predict a smart contract address on RSK before its
 
 ## **Flow Diagram**
 
-![flowCREATE](https://github.com/AntonyWilliam/CREATE/assets/54343267/e583361a-4eec-4b70-9430-f8af71d9fc87)
+![flowCREATE](https://github.com/AntonyWilliam/CREATE/assets/54343267/7bdc1c00-ca87-4b3c-a0e6-6bd497d3d23f "The current diagram is a flowchart that represents the steps involved in initializing the environment, configuring it, predicting and deploying an address, and checking for troubleshooting. Here is a text description of the flow:
+Start")
 
 
 ## **Dependencies**
