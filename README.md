@@ -1,7 +1,3 @@
-Improving documentation often involves making it more comprehensive, structured, and user-friendly. Here's a revised version of the provided documentation:
-
----
-
 # **CREATE and CREATE2 Address Prediction on RSK**
 
 This project showcases how to predict a smart contract address on RSK before its actual deployment using both standard methods and the CREATE2 scheme.
@@ -53,6 +49,3 @@ When you run the tests, you should see the following outputs:
 
 **Note**: Always ensure that your seed phrase is kept secure and never exposed or committed to public repositories.
 
----
-
-This revised documentation provides a clearer structure, separates different sections for better readability, and offers a bit more context where needed.
