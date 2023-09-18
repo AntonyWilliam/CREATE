@@ -12,7 +12,9 @@ This project showcases how to predict a smart contract address on RSK before its
 - **Security**: In certain scenarios, knowing the address beforehand can be used to ensure that only a specific contract can occupy that address.
 
 ## **Flow Diagram**
-[Insert visual representation of the address prediction process]
+
+![flowCREATE](https://github.com/AntonyWilliam/CREATE/assets/54343267/e583361a-4eec-4b70-9430-f8af71d9fc87)
+
 
 ## **Dependencies**
 - **Node.js (v18)**: Essential for running the scripts and tests.
@@ -21,7 +23,6 @@ This project showcases how to predict a smart contract address on RSK before its
   
 - **Ethers.js**: A library to interact with the Ethereum blockchain.
 
-## **Setup & Installation**
 ## **Setup & Installation**
 
 1. **Configuration**:
