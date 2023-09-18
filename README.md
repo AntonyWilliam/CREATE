@@ -1,5 +1,15 @@
-
 # **CREATE and CREATE2 Address Prediction on RSK**
+
+## **Table of Contents**
+- [Introduction](#introduction)
+- [Use Cases](#use-cases)
+- [Flow Diagram](#flow-diagram)
+- [Dependencies](#dependencies)
+- [Setup & Installation](#setup--installation)
+- [Expected Outputs](#expected-outputs)
+- [Troubleshooting](#troubleshooting)
+- [FAQs](#faqs)
+- [Feedback and Contribution](#feedback-and-contribution)
 
 ## **Introduction**
 This project showcases how to predict a smart contract address on RSK before its actual deployment using both standard methods and the CREATE2 scheme.
@@ -15,7 +25,6 @@ This project showcases how to predict a smart contract address on RSK before its
 
 ![flowCREATE](https://github.com/AntonyWilliam/CREATE/assets/54343267/7bdc1c00-ca87-4b3c-a0e6-6bd497d3d23f "The current diagram is a flowchart that represents the steps involved in initializing the environment, configuring it, predicting and deploying an address, and checking for troubleshooting. Here is a text description of the flow:
 Start")
-
 
 ## **Dependencies**
 - **Node.js (v18)**: Essential for running the scripts and tests.
@@ -53,7 +62,6 @@ When you run the tests, you should see the following outputs:
     Picked up a salt '0x02b170d84f848d2b6ac490e51f96c9d225cd79a0a392e03981ad42260e17507f' such that the deployed s/c address is 0x00009DD0dE4f46153821dbF8c0ab3B18F99f0467
 ```
 
-
 ## **Troubleshooting**
 - **Mismatched Address**: If the predicted address doesn't match the deployed one, ensure the bytecode, sender address, and nonce (or salt for CREATE2) are consistent with what was used for prediction.
 
@@ -79,4 +87,3 @@ For more assistance, reach out to our support team or visit the [Rootstock Devel
 Was this article helpful?
 | ✅ Yes | ❌ No |
 |---|---|
-
