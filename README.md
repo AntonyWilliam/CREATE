@@ -1,21 +1,27 @@
+
 # **CREATE and CREATE2 Address Prediction on RSK**
 
+## **Introduction**
 This project showcases how to predict a smart contract address on RSK before its actual deployment using both standard methods and the CREATE2 scheme.
 
-## **Overview**
+## **Use Cases**
+- **Smart Contract Upgrades**: Predicting addresses can be useful when planning for smart contract upgrades, ensuring that data links remain consistent.
+  
+- **User Experience**: DApps can provide users with an address to monitor or interact with even before a contract is deployed.
+  
+- **Security**: In certain scenarios, knowing the address beforehand can be used to ensure that only a specific contract can occupy that address.
 
-- **Test 1**: Demonstrates the standard method of address calculation.
-- **Test 2**: Utilizes the CREATE2 method. Specifically, it selects a salt such that the resulting contract address starts with 4 leading zeros.
+## **Flow Diagram**
+[Insert visual representation of the address prediction process]
 
-## **Prerequisites**
+## **Dependencies**
+- **Node.js (v18)**: Essential for running the scripts and tests.
+  
+- **Hardhat**: Used for compiling, testing, and deploying smart contracts.
+  
+- **Ethers.js**: A library to interact with the Ethereum blockchain.
 
-Ensure you have Node v18 installed. If not, you can manage different versions of Node using [NVM](https://github.com/nvm-sh/nvm).
-
-```bash
-nvm install 18
-nvm use 18
-```
-
+## **Setup & Installation**
 ## **Setup & Installation**
 
 1. **Configuration**:
@@ -45,7 +51,30 @@ When you run the tests, you should see the following outputs:
     Picked up a salt '0x02b170d84f848d2b6ac490e51f96c9d225cd79a0a392e03981ad42260e17507f' such that the deployed s/c address is 0x00009DD0dE4f46153821dbF8c0ab3B18F99f0467
 ```
 
----
 
-**Note**: Always ensure that your seed phrase is kept secure and never exposed or committed to public repositories.
+## **Troubleshooting**
+- **Mismatched Address**: If the predicted address doesn't match the deployed one, ensure the bytecode, sender address, and nonce (or salt for CREATE2) are consistent with what was used for prediction.
+
+- **Failed Deployment**: Ensure you have enough gas and that the RSK testnet is responsive. Check your internet connection.
+
+- **Missing Dependencies**: If you encounter errors related to missing modules, run `npm install` again.
+
+## **FAQs**
+- **Q: What's the difference between CREATE and CREATE2?**
+  - A: While both are used for contract creation, CREATE2 allows for more predictable address generation using a "salt" and init code.
+
+- **Q: Can I use this method for mainnet deployments?**
+  - A: Yes, but always ensure to test on testnets first and be aware of the gas costs.
+
+- **Q: Is there a risk of someone else deploying to my predicted address before I do?**
+  - A: With CREATE2 and a unique salt, this risk is minimized. However, always be cautious and monitor the address if it's critical.
+
+## **Feedback and Contribution**
+Your feedback is invaluable. If you find errors or have suggestions, please raise an issue or submit a pull request on GitHub.
+
+For more assistance, reach out to our support team or visit the [Rootstock Developer Portal](https://dev.rootstock.io/).
+
+Was this article helpful?
+| ✅ Yes | ❌ No |
+|---|---|
 
